@@ -1,10 +1,16 @@
 import React from "react";
+import "@/assets/styles/globals.css";
 
-const MainLayout = () => {
+export const metadata = {
+  title: "Property | Find the perfect rental",
+  description: "Find your dream rental property",
+  keywords: "Rental, find properties",
+};
+const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>MainLayout</div>
+        <div>{children}</div>
       </body>
     </html>
   );
